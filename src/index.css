@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(19, 18, 18);
+    color: white;
+  padding: 1rem;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+main {
+  display: grid;
+  gap: 1ch;
+}
+
+@media (width >= 500px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.episode-list ul {
+  display: grid;
+
+  list-style-type: none;
+  padding: 0.25rem;
+}
+
+.episode-list li {
+  padding: 1ch;
+  border-bottom: 1.5px solid rgb(43, 40, 40);
+}
+
+.episode-list li:hover {
+  cursor: pointer;
+  background-color: rgb(43, 40, 40);
+}
+
+.episode-details {
+  padding: 0.25rem;
+}
+
+.episode-details button {
+  padding: 1%;
+  width: 100%;
+}
